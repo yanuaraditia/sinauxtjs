@@ -12,12 +12,12 @@
                             </v-card-actions>
                         </div>
                         <v-avatar
-                            class="ma-3"
+                            class="mt-6 mr-6 rounded-circle"
                             size="90"
                             tile
                             circle
                         >
-                            <v-img :src="anggota.image_link"></v-img>
+                            <img :src="anggota.image_link"/>
                         </v-avatar>
                     </div>
                 </v-card>
@@ -42,6 +42,11 @@ export default {
             page: 1,
             perPage: 12,
             pages: [],
+        }
+    },
+    head() {
+        return {
+            title: 'Anggotas'
         }
     },
     methods: {
