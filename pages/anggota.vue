@@ -2,7 +2,7 @@
     <div>
         <v-row v-if="isLoaded">
             <v-col cols="12" md="4" v-for="anggota in displayedAnggotas" :key="anggota.id">
-                <v-card dark>
+                <v-card dark class="px-3 py-3">
                     <div class="d-flex flex-no-wrap justify-space-between">
                         <div>
                             <v-card-title class="headline" v-html="anggota.name"></v-card-title>

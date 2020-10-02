@@ -1,0 +1,9 @@
+html {
+    overflow: auto;
+}
+.overflow-auto {
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}
